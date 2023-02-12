@@ -1,0 +1,18 @@
+<div *ngIf="pet">
+    <div> id: {{ pet.id }}</div>
+    <div> timestamp: {{ pet.timestamp}}</div><br>
+    <div>
+        <label for="hero-name">name: </label><br>
+        <input name="name" [(ngModel)]="pet.name" >
+    </div>
+    <div>
+        <label for="hero-name">comment: </label><br>
+        <textarea name="name" [(ngModel)]="pet.comment" ></textarea>
+    </div>
+    <div>
+        <button mat-flat-button color="primary" (click)="editPet()">編集</button>
+    </div>
+<hr>
+<div>
+    <button mat-flat-button color="primary" (click)="deletePet()">削除</button>
+</div>

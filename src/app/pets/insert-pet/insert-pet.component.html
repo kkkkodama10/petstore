@@ -1,0 +1,13 @@
+<hr>
+<div>petの登録</div>
+<div>
+    <label for="hero-name">name: </label><br>
+    <input name="name" [(ngModel)] = newPetName>
+</div>
+<div>
+    <label for="hero-name">comment: </label><br>
+    <textarea name="name" [(ngModel)] = newPetComment></textarea>
+</div>
+<div>
+    <button mat-flat-button color="primary" (click)="insertPet()">登録</button>
+</div>
